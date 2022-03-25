@@ -72,13 +72,20 @@ body::after
 {
   padding: 20px;
   text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
   transition: 0.5s;
+}
+.container .card:hover .content
+{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .container .card .content h2 
 {
   position: absolute;
-  top: -30px;
+  top: -80px;
   right: 30px;
   font-size: 8em;
   color: rgba(255, 255, 255, 0.1);
@@ -88,4 +95,28 @@ body::after
 .container .card .content h3 
 {
   font-size: 1.8em;
+  color: #fff;
+  z-index: 2;
 } 
+
+.container .card .content p 
+{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.container .card .content a 
+{
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-attachment: #fff;
+  color: #000;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
